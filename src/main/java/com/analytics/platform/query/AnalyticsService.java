@@ -83,7 +83,7 @@ public class AnalyticsService {
         if (from == null || to == null || !from.isBefore(to)) {
             throw new IllegalArgumentException("'from' must be before 'to'");
         }
-        if (Duration.between(from, to).toDays() > maxRangeDays) {
+        if (Duration.between(from, to).compareTo(Duration.ofDays(maxRangeDays)) > 0) {
             throw new IllegalArgumentException("time range must not exceed " + maxRangeDays + " days");
         }
     }
