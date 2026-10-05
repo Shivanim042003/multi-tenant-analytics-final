@@ -1,0 +1,10 @@
+{
+  "config": {"mode":"ingest","tenants":50,"durationSec":300,"warmupSec":30,"ingestThreads":4,"queryThreads":0,
+             "batchSize":500,"ingestRateTarget":0,"seed":42,"zipf":1.10,"anchor":"2026-10-05T16:00:00Z","startedAt":"2026-10-05T16:33:49.361397Z"},
+  "environment": {"java":"25.0.2","os":"Windows 11","cpus":8},
+  "ingest": {"acceptedEvents":17577500,"eventsPerSec":65101.9,"batchErrors":4,
+             "batchLatencyMs": {"p50":22.94,"p95":64.70,"p99":109.25}},
+  "pipeline": {"publishedEvents":17577500,"consumedEventsDuringWindow":11994769,"drainSecondsAfterLoad":120.7},
+  "query": {"ok":0,"errors":0,"queriesPerSec":0.0,"latencyMs": {"p50":null,"p95":null,"p99":null}},
+  "cache": {"hits":0,"misses":0,"errors":0,"hitRate":null}
+}
